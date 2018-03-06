@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["Vector2d","This trait allows the creation of 2 dimensional vectors over various types."]]});
