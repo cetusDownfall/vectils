@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Vector2d` trait in crate `vectils`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Vector2d">
+
+    <title>vectils::Vector2d - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc trait">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        <div class="sidebar-menu">&#9776;</div>
+        
+        <p class='location'>Trait Vector2d</p><div class="sidebar-elems"><div class="block items"><a class="sidebar-title" href="#required-methods">Required Methods</a><div class="sidebar-links"><a href="#tymethod.xi">xi</a><a href="#tymethod.yi">yi</a><a href="#tymethod.xf">xf</a><a href="#tymethod.yf">yf</a></div><a class="sidebar-title" href="#provided-methods">Provided Methods</a><div class="sidebar-links"><a href="#method.in_range">in_range</a><a href="#method.w">w</a><a href="#method.h">h</a><a href="#method.delta">delta</a><a href="#method.in_dom">in_dom</a><a href="#method.linear">linear</a><a href="#method.cross">cross</a></div><a class="sidebar-title" href="#foreign-impls">Implementations on Foreign Types</a><div class="sidebar-links"><a href="#impl-Vector2d%3CT%3E">(T, T, T, T)</a><a href="#impl-Vector2d%3CT%3E">[T; 4]</a></div><a class="sidebar-title" href="#implementors">Implementors</a></div><p class='location'><a href='index.html'>vectils</a></p><script>window.sidebarCurrent = {name: 'Vector2d', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script></div>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='index.html'>vectils</a>::<wbr><a class="trait" href=''>Vector2d</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/vectils/lib.rs.html#6-45' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait Vector2d&lt;T&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html" title="trait core::cmp::PartialOrd">PartialOrd</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Add.html" title="trait core::ops::arith::Add">Add</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Sub.html" title="trait core::ops::arith::Sub">Sub</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Mul.html" title="trait core::ops::arith::Mul">Mul</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Div.html" title="trait core::ops::arith::Div">Div</a>&lt;Output = T&gt;,&nbsp;</span>{
+    fn <a href='#tymethod.xi' class='fnname'>xi</a>(&amp;self) -&gt; T;
+<div class='item-spacer'></div>    fn <a href='#tymethod.yi' class='fnname'>yi</a>(&amp;self) -&gt; T;
+<div class='item-spacer'></div>    fn <a href='#tymethod.xf' class='fnname'>xf</a>(&amp;self) -&gt; T;
+<div class='item-spacer'></div>    fn <a href='#tymethod.yf' class='fnname'>yf</a>(&amp;self) -&gt; T;
+
+    fn <a href='#method.in_range' class='fnname'>in_range</a>(a: T, b: T, c: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a> { ... }
+<div class='item-spacer'></div>    fn <a href='#method.w' class='fnname'>w</a>(&amp;self) -&gt; T { ... }
+<div class='item-spacer'></div>    fn <a href='#method.h' class='fnname'>h</a>(&amp;self) -&gt; T { ... }
+<div class='item-spacer'></div>    fn <a href='#method.delta' class='fnname'>delta</a>(&amp;self) -&gt; T { ... }
+<div class='item-spacer'></div>    fn <a href='#method.in_dom' class='fnname'>in_dom</a>(&amp;self, pt_x: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a> { ... }
+<div class='item-spacer'></div>    fn <a href='#method.linear' class='fnname'>linear</a>(&amp;self, pt_x: T) -&gt; T { ... }
+<div class='item-spacer'></div>    fn <a href='#method.cross' class='fnname'>cross</a>&lt;O:&nbsp;<a class="trait" href="../vectils/trait.Vector2d.html" title="trait vectils::Vector2d">Vector2d</a>&lt;T&gt;&gt;(&amp;self, b: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>O) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a>T<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 2]</a>&gt; { ... }
+}</pre><div class='docblock'><p>This trait allows the creation of 2 dimensional vectors over various types.</p>
+</div>
+            <h2 id='required-methods' class='small-section-header'>
+              Required Methods<a href='#required-methods' class='anchor'></a>
+            </h2>
+            <div class='methods'>
+        <h3 id='tymethod.xi' class='method'><span id='xi.v' class='invisible'><code>fn <a href='#tymethod.xi' class='fnname'>xi</a>(&amp;self) -&gt; T</code></span></h3><div class='docblock'><p>X value of first point.</p>
+</div><h3 id='tymethod.yi' class='method'><span id='yi.v' class='invisible'><code>fn <a href='#tymethod.yi' class='fnname'>yi</a>(&amp;self) -&gt; T</code></span></h3><div class='docblock'><p>Y value of first point.</p>
+</div><h3 id='tymethod.xf' class='method'><span id='xf.v' class='invisible'><code>fn <a href='#tymethod.xf' class='fnname'>xf</a>(&amp;self) -&gt; T</code></span></h3><div class='docblock'><p>X value of second point.</p>
+</div><h3 id='tymethod.yf' class='method'><span id='yf.v' class='invisible'><code>fn <a href='#tymethod.yf' class='fnname'>yf</a>(&amp;self) -&gt; T</code></span></h3><div class='docblock'><p>Y value of second point.</p>
+</div></div>
+            <h2 id='provided-methods' class='small-section-header'>
+              Provided Methods<a href='#provided-methods' class='anchor'></a>
+            </h2>
+            <div class='methods'>
+        <h3 id='method.in_range' class='method'><span id='in_range.v' class='invisible'><code>fn <a href='#method.in_range' class='fnname'>in_range</a>(a: T, b: T, c: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h3><div class='docblock'><p>Associated helper function which checks for whether or not a number falls within a range
+(inclusive).</p>
+</div><h3 id='method.w' class='method'><span id='w.v' class='invisible'><code>fn <a href='#method.w' class='fnname'>w</a>(&amp;self) -&gt; T</code></span></h3><div class='docblock'><p>Returns width of the vector. Signed.</p>
+</div><h3 id='method.h' class='method'><span id='h.v' class='invisible'><code>fn <a href='#method.h' class='fnname'>h</a>(&amp;self) -&gt; T</code></span></h3><div class='docblock'><p>Returns height of the vector. Signed.</p>
+</div><h3 id='method.delta' class='method'><span id='delta.v' class='invisible'><code>fn <a href='#method.delta' class='fnname'>delta</a>(&amp;self) -&gt; T</code></span></h3><div class='docblock'><p>Returns the slope of the vector.</p>
+</div><h3 id='method.in_dom' class='method'><span id='in_dom.v' class='invisible'><code>fn <a href='#method.in_dom' class='fnname'>in_dom</a>(&amp;self, pt_x: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h3><div class='docblock'><p>Returns whether or not this vector&#39;s domain includes the x value provided.</p>
+</div><h3 id='method.linear' class='method'><span id='linear.v' class='invisible'><code>fn <a href='#method.linear' class='fnname'>linear</a>(&amp;self, pt_x: T) -&gt; T</code></span></h3><div class='docblock'><p>Returns the y value of the line which is made by extending the ends of this vector.</p>
+</div><h3 id='method.cross' class='method'><span id='cross.v' class='invisible'><code>fn <a href='#method.cross' class='fnname'>cross</a>&lt;O:&nbsp;<a class="trait" href="../vectils/trait.Vector2d.html" title="trait vectils::Vector2d">Vector2d</a>&lt;T&gt;&gt;(&amp;self, b: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>O) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a>T<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 2]</a>&gt;</code></span></h3><div class='docblock'><p>Returns the point at which two vectors cross, or None if they do not.</p>
+</div></div>
+                <h2 id='foreign-impls' class='small-section-header'>
+                  Implementations on Foreign Types<a href='#foreign-impls' class='anchor'></a>
+                </h2>
+            <h3 id='impl-Vector2d%3CT%3E' class='impl'><span class='in-band'><code>impl&lt;T&gt; <a class="trait" href="../vectils/trait.Vector2d.html" title="trait vectils::Vector2d">Vector2d</a>&lt;T&gt; for <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">(</a>T, T, T, T<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">)</a> <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html" title="trait core::cmp::PartialOrd">PartialOrd</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Add.html" title="trait core::ops::arith::Add">Add</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Sub.html" title="trait core::ops::arith::Sub">Sub</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Mul.html" title="trait core::ops::arith::Mul">Mul</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Div.html" title="trait core::ops::arith::Div">Div</a>&lt;Output = T&gt;,&nbsp;</span></code><a href='#impl-Vector2d%3CT%3E' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#46-56' title='goto source code'>[src]</a></span></h3>
+<span class='docblock autohide'><div class='impl-items'><h4 id='method.xi' class="method"><span id='xi.v-1' class='invisible'><code>fn <a href='#method.xi' class='fnname'>xi</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#52' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.yi' class="method"><span id='yi.v-1' class='invisible'><code>fn <a href='#method.yi' class='fnname'>yi</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#53' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.xf' class="method"><span id='xf.v-1' class='invisible'><code>fn <a href='#method.xf' class='fnname'>xf</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#54' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.yf' class="method"><span id='yf.v-1' class='invisible'><code>fn <a href='#method.yf' class='fnname'>yf</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#55' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.in_range-1' class="method"><span id='in_range.v-1' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.in_range' class='fnname'>in_range</a>(a: T, b: T, c: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#22-25' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.w-1' class="method"><span id='w.v-1' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.w' class='fnname'>w</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#27' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.h-1' class="method"><span id='h.v-1' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.h' class='fnname'>h</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#29' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.delta-1' class="method"><span id='delta.v-1' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.delta' class='fnname'>delta</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#31' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.in_dom-1' class="method"><span id='in_dom.v-1' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.in_dom' class='fnname'>in_dom</a>(&amp;self, pt_x: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#33' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.linear-1' class="method"><span id='linear.v-1' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.linear' class='fnname'>linear</a>(&amp;self, pt_x: T) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#35' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.cross-1' class="method"><span id='cross.v-1' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.cross' class='fnname'>cross</a>&lt;O:&nbsp;<a class="trait" href="../vectils/trait.Vector2d.html" title="trait vectils::Vector2d">Vector2d</a>&lt;T&gt;&gt;(&amp;self, b: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>O) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a>T<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 2]</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#37-44' title='goto source code'>[src]</a></span></h4>
+</div></span><h3 id='impl-Vector2d%3CT%3E-1' class='impl'><span class='in-band'><code>impl&lt;T&gt; <a class="trait" href="../vectils/trait.Vector2d.html" title="trait vectils::Vector2d">Vector2d</a>&lt;T&gt; for <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a>T<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 4]</a> <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialOrd.html" title="trait core::cmp::PartialOrd">PartialOrd</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Add.html" title="trait core::ops::arith::Add">Add</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Sub.html" title="trait core::ops::arith::Sub">Sub</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Mul.html" title="trait core::ops::arith::Mul">Mul</a>&lt;Output = T&gt; + <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/arith/trait.Div.html" title="trait core::ops::arith::Div">Div</a>&lt;Output = T&gt;,&nbsp;</span></code><a href='#impl-Vector2d%3CT%3E-1' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#57-67' title='goto source code'>[src]</a></span></h3>
+<span class='docblock autohide'><div class='impl-items'><h4 id='method.xi-1' class="method"><span id='xi.v-2' class='invisible'><code>fn <a href='#method.xi' class='fnname'>xi</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#63' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.yi-1' class="method"><span id='yi.v-2' class='invisible'><code>fn <a href='#method.yi' class='fnname'>yi</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#64' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.xf-1' class="method"><span id='xf.v-2' class='invisible'><code>fn <a href='#method.xf' class='fnname'>xf</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#65' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.yf-1' class="method"><span id='yf.v-2' class='invisible'><code>fn <a href='#method.yf' class='fnname'>yf</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#66' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.in_range-2' class="method"><span id='in_range.v-2' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.in_range' class='fnname'>in_range</a>(a: T, b: T, c: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#22-25' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.w-2' class="method"><span id='w.v-2' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.w' class='fnname'>w</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#27' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.h-2' class="method"><span id='h.v-2' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.h' class='fnname'>h</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#29' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.delta-2' class="method"><span id='delta.v-2' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.delta' class='fnname'>delta</a>(&amp;self) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#31' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.in_dom-2' class="method"><span id='in_dom.v-2' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.in_dom' class='fnname'>in_dom</a>(&amp;self, pt_x: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#33' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.linear-2' class="method"><span id='linear.v-2' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.linear' class='fnname'>linear</a>(&amp;self, pt_x: T) -&gt; T</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#35' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.cross-2' class="method"><span id='cross.v-2' class='invisible'><code>fn <a href='../vectils/trait.Vector2d.html#method.cross' class='fnname'>cross</a>&lt;O:&nbsp;<a class="trait" href="../vectils/trait.Vector2d.html" title="trait vectils::Vector2d">Vector2d</a>&lt;T&gt;&gt;(&amp;self, b: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>O) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">[</a>T<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.array.html">; 2]</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/vectils/lib.rs.html#37-44' title='goto source code'>[src]</a></span></h4>
+</div></span>
+        <h2 id='implementors' class='small-section-header'>
+          Implementors<a href='#implementors' class='anchor'></a>
+        </h2>
+        <ul class='item-list' id='implementors-list'>
+    </ul><script type="text/javascript" async
+                         src="../implementors/vectils/trait.Vector2d.js">
+                 </script></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>↑</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>↓</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>↹</dt>
+                    <dd>Switch tab</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt style="width:31px;">+ / -</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "vectils";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
